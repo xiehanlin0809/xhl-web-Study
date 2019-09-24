@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.a{
+				width: 200px;
+				height: 200px;
+			}
+			.b{
+				background-color: red;
+			}
+			.c{
+				background-color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="mydiv" class="a b"></div>
+		<button id="btn">按钮</button>
+		<script type="text/javascript">
+			var div = document.getElementById('mydiv');
+			var btn = document.getElementById('btn');
+			btn.onclick = function(){
+			 	div.className = 'a c';
+		    }
+			
+		</script>
+	</body>
+</html>

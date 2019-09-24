@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="mydiv" class="div" data-xhl='xhl'>div</div>
+		<a href="www.baidu.com">baidu</a>
+		
+		<script type="text/javascript">
+			var div = document.getElementById('mydiv');
+			var a = document.getElementsByTagName('a');
+			
+			console.log(div.getAttribute('data'));
+			console.log(a[0].getAttribute('href'));
+		</script>
+	</body>
+</html>
